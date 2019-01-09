@@ -1,0 +1,83 @@
+xwidget xframe xbutton
+
+onTouch() //check if the event is in screen
+
+MainActivity implements view.onTouchListender
+
+
+1v1 = new layoutView(_, _)
+
+Feb 8th-
+
+int sum = Blod.stream()
+
+public void handleClick(MouseEvent event){
+ 	Optional maybeBlod = model.find(event.getX(), event.getY());
+	if(maybeBlod.isPrensent()){
+		iModel.setSelecter(maybeBlod.get());
+	}
+	else{
+		model.addBlod(event.getX(), event.getY());
+	}
+}
+
+
+STATE!!
+
+public void onTouch(){
+case STATE.READY
+}
+
+Controller{
+	BlodModel model;
+	InteractModel iModel;
+
+
+	blodCanvas.set
+}
+
+public void handleMosePressed(MouseEvent event){
+	switch(state){
+		case STATE.READY:
+		Optional<Blod> maybeBlod = model.find(event.getX(), event.getY());
+		
+		if(maybeBlod.isPrensent()){
+		iModel.setSelevter(maybeBlod.get());
+		prevX = event.getX();
+		pervY = event.getY();
+		state = STATE.DRAGGING;
+	}
+	else{
+		model.addBlod(event.getX(), event.getY());
+		state = STATE.READY;
+	}
+	break;
+	}
+}
+
+
+public void handleMoseDragged(MouseEvent event){
+	switch(state){
+		case STATE.DRAGGING:
+		//Optional<Blod> maybeBlod = model.find(event.getX(), event.getY());
+		dx = event.getX() - prevX;
+		dy = event.getX() - prevY;
+		model.moveBlod(iModel.selected, dx, dy);
+		prevX = event.getX();
+		pervY = event.getY();
+		state = STATE.READY
+		break;
+	}
+}
+
+public void handleMoseReleased(MouseEvent event){
+	switch(state){
+		case STATE.DRAGGING:
+		iModel.serSelected(null);
+		state = STATE.READY
+		break;
+	}
+}
+
+
+
