@@ -1,0 +1,102 @@
+
+1. What is the actual name of CMPT 381?
+Implementation of Graphical User Interfaces
+
+2. What was the first videogame to contain a so-called "easter egg"?
+Adventure (Atari 2600, 1979)
+
+3. What is the boundary between the human and the system in the architecture diagram for interactive systems?
+The interface
+
+4. What is the bottom layer of the layered model of interactive systems?
+Devices
+
+5. Name a GUI toolkit that is not JavaFX or Android
+Swing, AWT, Qt, WPF, X, etc.
+
+6. Is the Desktop the same thing as the Window Manager?
+No - the desktop is just an application
+
+7. What class does a JavaFX interactive system extend?
+Application
+
+8. What company did Steve Jobs steal the ideas from for the Mac user interface?
+Xerox
+
+9. What class do all Android widgets inherit from?
+View
+
+10. Is a colour picker widget an abstract model widget?
+No
+
+11. What kind of widget is a tab pane?
+A container widget
+
+12. What's an example of a pseudoevent?
+Filtered/high-level, window event, programmer-defined event
+
+13.  Give an example of a convenience method for adding an event handler to a Pane in JavaFX
+Pane.setOnMouseMoved
+
+14. Which are processed first, event handlers or event filters?
+Event filters
+
+15. What kind of layout manager in JavaFX lays out widgets around the edges of the window, and one in the middle?
+BorderPane
+
+16. Name two elements of MVC and state whether they should have direct visibility to each other
+
+17. Between which two elements of MVC would the controller / gatekeeper pattern be used?
+Between Controller and Model (Model should use a public API)
+
+18. What's the name of the class where you would store a selection?
+InteractionModel
+
+19. What's a type of interactive system that is primarily based on verbs?
+Command language
+
+20. What is an example of a verb in a direct-manipulation system?
+Click, Drag, Release
+
+21. What state is missing in a touch screen, compared to a mouse-based system?
+Hover state
+
+22. What are the three things that you should label for a transition in a controller state diagram?
+Event, Context, Side Effects
+
+23. What are the four channels in the RGBA colour model?
+Red, Green, Blue, Alpha
+
+24. Which kind of drawing is best for photographs?
+Pixel model
+
+25. If you have multiple views in a graphical application, what are the minimum and maximum values that you should use to store coordinates of the objects in the application?
+0.0 - 1.0
+
+26. How does setting the clip rectangle make a system more efficient?
+It doesn't have to draw the entire screen
+
+27. Name the three main graphical transformations
+Translation, Rotation, Scaling
+
+28. If you want to rotate an object around its centre point, what do you have to do before applying the rotation transformation?
+Translate to the origin
+
+29. In terms of Z-order, which item in the model is guaranteed to be drawn on top?
+the first item, or the selected item
+
+30. What is the best language for building a GUI interface to track the killer's IP?
+Visual Basic
+
+31. What Java construct is used to let the model contain both Blobs and Groups?
+A common interface / the Groupable interface
+
+32. What is the name of the standard for describing different types of data that can be stored on the clipboard (or in an email message)?
+MIME (Multipurpose Internet Mail Extensions)
+
+33. What is the date and time of the 381 final exam?
+Tuesday April 10 at 9:00am
+
+34. What is the room number of the 381 final?
+Engineering 1B71
+
